@@ -65,6 +65,69 @@
 				<img src="<?php bloginfo('template_directory'); ?>/img/boxes.png" alt="">
 			</div>
 		</div>
+		<div class="title--whiteline"></div>
+	</section>
+
+	<section class="boxes">
+		<h1 class="block_title black">Наши OzoneBox</h1>
+		<div class="contain">
+
+			<div class="boxes__item">
+				<div class="boxes__item--img">
+					<img src="<?php bloginfo('template_directory'); ?>/img/6ctXGVc9hoE.jpg" alt="">
+				</div>
+				<div class="boxes__item--desc">
+						<h4>Полное восстановление волос</h4>
+						<ul>
+							<li>Маска для роста и против 
+				выпадения волос </li>
+							<li>Мега-питательная маска для 
+				восстановления структуры волос</li>
+						</ul>
+						<h4>цена <span>1990</span>руб</h4>
+						<a href="#" class="boxes__item--desc--but">Заказать</a>
+				</div>
+				<div class="boxes__item--desc--more">
+					<a href="#">Подробнее</a>
+				</div>
+			</div>
+			<div class="boxes__item">
+				<div class="boxes__item--img">
+					<img src="<?php bloginfo('template_directory'); ?>/img/12095120_923851697662532_623430102895407746_o.jpg" alt="">
+				</div>
+				<div class="boxes__item--desc">
+						<h4>Безупречно чистая<br>кожа</h4>
+						<ul>
+							<li>Дневной крем</li>
+							<li>Ночной крем</li>
+							<li>Озонированное масло 6000</li>	
+						</ul>
+						<h4>цена <span>2990</span>руб</h4>
+						<a href="#" class="boxes__item--desc--but">Заказать</a>
+				</div>
+				<div class="boxes__item--desc--more">
+					<a href="#">Подробнее</a>
+				</div>
+			</div>
+			<div class="boxes__item">
+				<div class="boxes__item--img">
+					<img src="<?php bloginfo('template_directory'); ?>/img/rSce_pTQ_24.jpg" alt="">
+				</div>
+				<div class="boxes__item--desc">
+					<h4>Идеальное<br>тело</h4>
+						<ul>
+							<li>Антицеллюлитный крем</li>							
+							<li>Крем для борьбы с растяжками</li>	
+							<li>Озонированное масло</li>
+						</ul>
+						<h4>цена <span>2990</span>руб</h4>
+						<a href="#" class="boxes__item--desc--but">Заказать</a>
+				</div>
+				<div class="boxes__item--desc--more">
+					<a href="#">Подробнее</a>
+				</div>
+			</div>
+		</div>
 	</section>
 
 <body>    
