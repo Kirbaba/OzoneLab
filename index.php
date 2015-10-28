@@ -38,8 +38,8 @@
 				</svg>
 			</div>
 			<div class="header--numb">
-				<h4>+7 (930) 8-1111-99</h4>
-				<p>г.Нижний Новгород, ул.Бориса Панина, д.9</p>
+				<h4><?php echo get_theme_mod('phone_textbox'); ?></h4>
+				<p><?php echo get_theme_mod('address_textbox'); ?></p>
 			</div>
 			<div class="header--callbut">
 				<a href="#nowhere">заказать звонок</a>
@@ -56,9 +56,9 @@
 					и получите озонированное 
 					масло в подарок!</p>
 				</div>	
-				<input type="text" class="title__form--input" placeholder="Имя">
-				<input type="email" class="title__form--input" placeholder="E-mail">
-				<input type="phone" class="title__form--input" placeholder="Телефон">
+				<input type="text" class="title__form--input" name="header-feedback-name" placeholder="Имя">
+				<input type="email" class="title__form--input" name="header-feedback-mail"placeholder="E-mail">
+				<input type="phone" class="title__form--input" name="header-feedback-phone" placeholder="Телефон">
 				<input type="submit" class="title__form--sub" value="Заказать">
 			</div>
 			<div class="title--boxesimg">
@@ -204,7 +204,17 @@
 		</div>
 	</section>
 
-<body>    
+<body>
+<script type="text/javascript">
+	addLoadEvent = function(func){if(typeof jQuery!="undefined")jQuery(document).ready(func);else if(typeof wpOnload!='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+	var ajaxurl = '/wp-admin/admin-ajax.php',
+		pagenow = 'toplevel_page_mainpage',
+		typenow = '',
+		adminpage = 'toplevel_page_mainpage',
+		thousandsSeparator = ' ',
+		decimalPoint = ',',
+		isRtl = 0;
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>

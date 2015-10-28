@@ -1,5 +1,10 @@
 <?php
 
+define('TM_DIR', get_template_directory(__FILE__));
+define('TM_URL', get_template_directory_uri(__FILE__));
+
+require_once TM_DIR . '/lib/Parser.php';
+
 function add_style(){
     wp_enqueue_style( 'my-bootstrap-extension', get_template_directory_uri() . '/css/bootstrap.css', array(), '1');
     wp_enqueue_style( 'my-styles', get_template_directory_uri() . '/css/style.css', array('my-bootstrap-extension'), '1');
@@ -13,10 +18,17 @@ function add_script(){
     wp_enqueue_script( 'my-bootstrap-extension', get_template_directory_uri() . '/js/bootstrap.js', array(), '1');
     wp_enqueue_script( 'my-script', get_template_directory_uri() . '/js/script.js', array(), '1');
     wp_enqueue_script( 'fotorama-js', get_template_directory_uri() . '/js/fotorama.js', array(), '1');
-
-    
 }
 
+function add_admin_script(){
+    wp_enqueue_script( 'jquery', get_template_directory_uri() . '/js/jquery-2.1.3.min.js', array(), '1');
+    wp_enqueue_script('admin',get_template_directory_uri() . '/js/admin.js', array(), '1');
+    wp_enqueue_style( 'my-bootstrap-extension-admin', get_template_directory_uri() . '/css/bootstrap.css', array(), '1');
+    wp_enqueue_script( 'my-bootstrap-extension', get_template_directory_uri() . '/js/bootstrap.js', array(), '1');
+    wp_enqueue_style( 'my-style-admin', get_template_directory_uri() . '/css/admin.css', array(), '1');
+}
+
+add_action('admin_enqueue_scripts', 'add_admin_script');
 add_action( 'wp_enqueue_scripts', 'add_style' );
 add_action( 'wp_enqueue_scripts', 'add_script' );
 
@@ -51,9 +63,69 @@ function excerpt_readmore($more) {
 }
 add_filter('excerpt_more', 'excerpt_readmore');
 
-
 if ( function_exists( 'add_theme_support' ) )
     add_theme_support( 'post-thumbnails' );
 
+/*===================THEME SETTINGS============================*/
 
+add_action('customize_register', function($customizer){
+    /*Меню настройки контактов*/
+    $customizer->add_section(
+        'contacts_section',
+        array(
+            'title' => 'Настройки контактов',
+            'description' => 'Контакты',
+            'priority' => 35,
+        )
+    );
+    $customizer->add_setting(
+        'address_textbox',
+        array('default' => 'г. Нижний Новгород, ул. Бориса Панина, д.9')
+    );
+    $customizer->add_setting(
+        'mail_textbox',
+        array('default' => 'admin@admin.ru')
+    );
+    $customizer->add_setting(
+        'phone_textbox',
+        array('default' => '+7 (930) 8-1111-99')
+    );
 
+    $customizer->add_control(
+        'phone_textbox',
+        array(
+            'label' => 'Телефон',
+            'section' => 'contacts_section',
+            'type' => 'text',
+        )
+    );
+    $customizer->add_control(
+        'address_textbox',
+        array(
+            'label' => 'Адрес',
+            'section' => 'contacts_section',
+            'type' => 'text',
+        )
+    );
+    $customizer->add_control(
+        'mail_textbox',
+        array(
+            'label' => 'Email',
+            'section' => 'contacts_section',
+            'type' => 'text',
+        )
+    );
+});
+
+/*=================END THEME SETTINGS==========================*/
+
+/*=======================FEEDBACK==============================*/
+
+add_action('wp_ajax_send_feedback', 'sendFeedback');
+add_action('wp_ajax_nopriv_send_feedback', 'sendFeedback');
+
+function sendFeedback(){
+
+}
+
+/*======================END FEEDBACK===========================*/

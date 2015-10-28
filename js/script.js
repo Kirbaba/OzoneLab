@@ -54,3 +54,13 @@ $(function() {
     });
 });
 
+$(function(){
+   $(document).on('click','.title__form--sub', function(){
+       var name = $('input[name="header-feedback-name"]').val();
+       var mail = $('input[name="header-feedback-mail"]').val();
+       var phone = $('input[name="header-feedback-phone"]').val();
+
+       console.log(name+' '+mail+' '+phone);
+   });
+});
+
