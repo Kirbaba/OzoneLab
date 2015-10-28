@@ -43,7 +43,7 @@
 				<p><?php echo get_theme_mod('address_textbox'); ?></p>
 			</div>
 			<div class="header--callbut">
-				<a href="#nowhere">заказать звонок</a>
+				<a href="#" data-toggle="modal" data-target="#order_call">заказать звонок</a>
 			</div>
 		</div>		
 	</header>
@@ -87,7 +87,7 @@
 				восстановления структуры волос</li>
 						</ul>
 						<h4>цена <span>1990</span>руб</h4>
-						<a href="#" class="boxes__item--desc--but">Заказать</a>
+						<a href="#" class="boxes__item--desc--but" data-toggle="modal" data-target="#order_call">Заказать</a>
 				</div>
 				<div class="boxes__item--desc--more">
 					<a href="#" data-toggle="modal" data-target="#modal--black">Подробнее</a>
@@ -133,7 +133,7 @@
 							<li>Озонированное масло 6000</li>	
 						</ul>
 						<h4>цена <span>2990</span>руб</h4>
-						<a href="#" class="boxes__item--desc--but">Заказать</a>
+						<a href="#" class="boxes__item--desc--but" data-toggle="modal" data-target="#order_call">Заказать</a>
 				</div>
 				<div class="boxes__item--desc--more">
 					<a href="#" data-toggle="modal" data-target="#modal--white">Подробнее</a>
@@ -176,7 +176,7 @@
 							<li>Озонированное масло</li>
 						</ul>
 						<h4>цена <span>2990</span>руб</h4>
-						<a href="#" class="boxes__item--desc--but">Заказать</a>
+						<a href="#" class="boxes__item--desc--but" data-toggle="modal" data-target="#order_call">Заказать</a>
 				</div>
 				<div class="boxes__item--desc--more">
 					<a href="#" data-toggle="modal" data-target="#modal--red">Подробнее</a>
@@ -445,11 +445,32 @@
 				<p>г.Нижний Новгород, ул.Бориса Панина, д.9</p>
 			</div>
 			<div class="header--callbut">
-				<a href="#nowhere">заказать звонок</a>
+				<a href="#" data-toggle="modal" data-target="#order_call">заказать звонок</a>
 			</div>
 			<h5>Общество с ограниченной ответственностью "Отри" ОГРН 1065262089551 Юр. Адрес: 603089, г. Нижний Новгород, ул. Бориса Панина, д. 9</h5>
 		</div>
 	</footer>
+
+	<!-- Modal -->
+	<div class="modal fade" id="order_call" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">				
+				<div class="modal-body">
+					
+						<div class="title__form--head">
+							<p>Оставьте заявку прямо сейчас 
+							и получите озонированное 
+							масло в подарок!</p>
+						</div>
+						<input type="text" class="title__form--input" name="header-feedback-name" placeholder="Имя">
+						<input type="email" class="title__form--input" name="header-feedback-mail"placeholder="E-mail">
+						<input type="phone" class="title__form--input" name="header-feedback-phone" placeholder="Телефон">
+						<input type="submit" class="title__form--sub" value="Заказать">
+					</div>	
+							
+			</div>
+		</div>
+	</div>
 
 <?php wp_footer(); ?>
 </body>

@@ -122,7 +122,7 @@ ul {
       font-size: 18px;
       text-transform: uppercase;
       width: 211px;
-      height: 56px;
+      height: 46px;
       line-height: 46px;
       border: 2px solid #ef1b20;
       background-color: rgba(255, 255, 255, 0.1);
@@ -519,52 +519,60 @@ ul {
         background-position: 100% 0;
         right: -15px; }
 
-.modal.in .modal-dialog {
+.boxes .modal.in .modal-dialog {
   width: 75%;
   margin-top: 75px; }
-
-.modal-content {
+.boxes .modal-content {
   -webkit-border-radius: 0;
   border-radius: 0;
   padding: 25px 10px; }
-  .modal-content ol {
+  .boxes .modal-content ol {
     padding-left: 25px; }
-    .modal-content ol li {
+    .boxes .modal-content ol li {
       font-size: 20px;
       margin-bottom: 15px; }
-  .modal-content h3 {
+  .boxes .modal-content h3 {
     font-weight: bold;
     font-size: 27px; }
-  .modal-content p {
+  .boxes .modal-content p {
     font-size: 20px;
     margin-bottom: 0; }
+.boxes .modal-body {
+  width: 75%; }
+.boxes #modal--black .modal-content {
+  color: #FFF;
+  background-image: url("../img/mod-bg1.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+.boxes #modal--white .modal-content {
+  color: #FFF;
+  background-image: url("../img/mod-bg2.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+.boxes #modal--red .modal-content {
+  color: #FFF;
+  background-image: url("../img/mod-bg3.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.modal.in .modal-dialog {
+  width: 350px;
+  margin-top: 75px; }
+  .modal.in .modal-dialog .modal-content {
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.3); }
 
 .modal-body {
-  width: 75%; }
-
-#modal--black .modal-content {
-  color: #FFF;
-  background-image: url("../img/mod-bg1.png");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-#modal--white .modal-content {
-  color: #FFF;
-  background-image: url("../img/mod-bg1.png");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
-
-#modal--red .modal-content {
-  color: #FFF;
-  background-image: url("../img/mod-bg1.png");
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  position: relative;
+  padding: 0 15px; }
 
 .footer {
   display: block;
