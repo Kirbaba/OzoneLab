@@ -292,7 +292,7 @@
 
 	<section class="reviews">
 		<h1 class="block_title red">Insta-отзывы наших клиентов</h1>
-		<div class="container">
+		<div class="contain">
 			<div class="reviews__box">
 				<div class="reviews__item">
 					<div class="reviews__item--img">
