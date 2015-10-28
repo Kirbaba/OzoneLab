@@ -228,7 +228,8 @@ ul {
   float: left;
   position: relative;
   width: 100%;
-  background-color: #EBEBEB; }
+  background-color: #EBEBEB;
+  padding: 0 0 50px; }
   .boxes__item {
     display: block;
     float: left;
@@ -325,6 +326,49 @@ ul {
           font-size: 22px;
           display: block;
           padding: 10px 0; }
+
+.infographics {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative;
+  background-color: #FFF; }
+  .infographics__box {
+    height: 750px;
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+    margin: 50px 0;
+    background-image: url("../img/ozone-products-1.png");
+    background-position: 50% 50%;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat; }
+  .infographics p {
+    font-size: 18px;
+    font-weight: 900; }
+  .infographics__item-1 {
+    display: block;
+    position: absolute;
+    top: 215px;
+    left: 75px;
+    width: 270px; }
+  .infographics__item-2 {
+    display: block;
+    position: absolute;
+    top: 215px;
+    right: 175px;
+    width: 270px; }
+  .infographics__item-3 {
+    position: absolute;
+    bottom: 95px;
+    left: 150px; }
+  .infographics__item-4 {
+    position: absolute;
+    bottom: 215px;
+    right: 100px; }
 
 @media only screen and (max-width: 770px) {
   .align-left {

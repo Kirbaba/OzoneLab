@@ -101,6 +101,7 @@
 	position: relative;
 	width: 100%;
 	background-color: #EBEBEB;
+	padding: 0 0 50px;
 	&__item {
 		display: block;
 		float: left;
@@ -207,6 +208,56 @@
 				}
 			}
 		}
+	}
+}
+
+.infographics {
+	display: block;
+	float: left;
+	width: 100%;
+	position: relative;
+	background-color: #FFF;
+	&__box {
+		height: 750px;
+		display: block;
+		float: left;
+		position: relative;
+		width: 100%;
+		margin: 50px 0;
+		background-image: url('../img/ozone-products-1.png');
+		background-position: 50% 50%;
+		-webkit-background-size: contain;
+		     -o-background-size: contain;
+		        background-size: contain;
+		background-repeat: no-repeat;
+	}
+	p {
+		font-size: 18px;
+		font-weight: 900;
+	}
+	&__item-1 {
+		display: block;
+		position: absolute;
+		top: 215px;
+		left: 75px;
+		width: 270px;
+	}
+	&__item-2 {
+		display: block;
+		position: absolute;
+		top: 215px;
+		right: 175px;
+		width: 270px;
+	}
+	&__item-3 {
+		position: absolute;
+		bottom: 95px;
+		left: 150px;
+	}
+	&__item-4 {
+		position: absolute;
+		bottom: 215px;
+		right: 100px;
 	}
 }
 

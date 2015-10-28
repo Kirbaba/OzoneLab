@@ -130,6 +130,25 @@
 		</div>
 	</section>
 
+	<section class="infographics">
+		<h1 class="block_title red">OzoneBox - это...</h1>
+		<div class="contain">
+			<div class="infographics__box">
+				<div class="infographics__item-1">
+					<p>2-3 полноразмерных продукта из нашей линейки 100% натуральной озоновой косметики для красоты волос и молодости кожи в каждом боксе </p>				</div>
+				<div class="infographics__item-2">
+					<p>Роскошная<br>коробочка  </p>
+				</div>
+				<div class="infographics__item-3">
+					<p>Доставка по<br>всему миру </p>
+				</div>
+				<div class="infographics__item-4">					
+					<p>Приятные сюрпризы <br>от команды OzoneLab </p>
+				</div>
+			</div>
+		</div>
+	</section>
+
 <body>    
 <?php wp_footer(); ?>
 </body>
