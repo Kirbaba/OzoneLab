@@ -261,3 +261,49 @@
 	}
 }
 
+.reasons {
+	display: block;
+	float: left;
+	width: 100%;
+	position: relative;
+	padding: 0 0 25px;
+	background-image: url('../img/volos3.jpg');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+	background-position: 0 50%;
+	ul {	
+		margin-top: 25px;	
+		li {
+			position: relative;
+			padding-left: 60px;
+			margin-bottom: 25px;
+			&:before {
+				content: "";
+				width: 40px;
+				height: 40px;
+				margin-left: -60px;
+				display: block;
+				float: left;
+				background: url('../img/liststyle.png');
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				-webkit-background-size: cover;
+				     -o-background-size: cover;
+				        background-size: cover;
+			}
+			h4 {
+				font-size: 25px;
+				font-weight: 900;
+				text-transform: uppercase;
+				padding-top: 10px;
+			}
+			p {
+				font-size: 20px;
+				
+			}
+		}		
+		
+	}
+}
