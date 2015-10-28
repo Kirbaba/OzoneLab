@@ -465,6 +465,71 @@ ul {
     .want--description p {
       font-size: 21px; }
 
+.reviews {
+  display: block;
+  float: left;
+  width: 100%;
+  position: relative; }
+  .reviews__box {
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    margin-top: 50px; }
+  .reviews__item {
+    display: block;
+    float: left;
+    position: relative;
+    width: 33.33333%;
+    margin: 25px 0;
+    padding: 0 10px; }
+    .reviews__item:before, .reviews__item:after {
+      display: table;
+      content: " "; }
+    .reviews__item:after {
+      clear: both; }
+    .reviews__item--img {
+      display: block;
+      width: 90%;
+      margin: 0 auto 25px;
+      position: relative; }
+      .reviews__item--img img {
+        width: 100%;
+        height: auto; }
+    .reviews__item h2 {
+      font-size: 27px;
+      text-align: center;
+      margin-bottom: 15px; }
+    .reviews__item p {
+      font-size: 14px;
+      position: relative;
+      padding: 20px 0; }
+      .reviews__item p:before, .reviews__item p:after {
+        content: "";
+        display: block;
+        position: relative;
+        height: 20px;
+        background-repeat: no-repeat; }
+      .reviews__item p:before {
+        left: -15px;
+        background-image: url("../img/quote-top.png");
+        background-position: 0 0; }
+      .reviews__item p:after {
+        background-image: url("../img/quote-bot.png");
+        background-position: 100% 0;
+        right: -15px; }
+
+.footer {
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%;
+  padding-top: 15px; }
+  .footer h5 {
+    color: #FFF;
+    font-size: 16px;
+    text-align: center; }
+
 @media only screen and (max-width: 770px) {
   .align-left {
     text-align: center; }
