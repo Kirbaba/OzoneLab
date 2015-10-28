@@ -519,6 +519,53 @@ ul {
         background-position: 100% 0;
         right: -15px; }
 
+.modal.in .modal-dialog {
+  width: 75%;
+  margin-top: 75px; }
+
+.modal-content {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  padding: 25px 10px; }
+  .modal-content ol {
+    padding-left: 25px; }
+    .modal-content ol li {
+      font-size: 20px;
+      margin-bottom: 15px; }
+  .modal-content h3 {
+    font-weight: bold;
+    font-size: 27px; }
+  .modal-content p {
+    font-size: 20px;
+    margin-bottom: 0; }
+
+.modal-body {
+  width: 75%; }
+
+#modal--black .modal-content {
+  color: #FFF;
+  background-image: url("../img/mod-bg1.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#modal--white .modal-content {
+  color: #FFF;
+  background-image: url("../img/mod-bg1.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+#modal--red .modal-content {
+  color: #FFF;
+  background-image: url("../img/mod-bg1.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
 .footer {
   display: block;
   float: left;

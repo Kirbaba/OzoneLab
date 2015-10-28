@@ -90,7 +90,35 @@
 						<a href="#" class="boxes__item--desc--but">Заказать</a>
 				</div>
 				<div class="boxes__item--desc--more">
-					<a href="#">Подробнее</a>
+					<a href="#" data-toggle="modal" data-target="#modal--black">Подробнее</a>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="modal--black" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							
+							<div class="modal-body">
+								<h3>OzoneBox №1 "Полное Восстановление волос"</h3>
+								<ol>
+									<li>
+										Маска для восстановления структуры волос. Мега-
+										питательная маска, которая глубоко проникает в структуру 
+										волоса, питает, восстанавливает и лечит волос изнутри. 
+										Заполняет поврежденные участки волос и препятствует их 
+										сечению и ломкости. 
+									</li>
+									<li>
+										Маска для роста и против выпадения волос.Улучшает 
+										кровоснабжение кожи головы, укрепляет корни, пробуждает 
+										спящие волосяные фолликулы, активирует рост и сокращает 
+										выпадение, а также увлажняет и питает кожу головы. Красивые 
+										и Здоровые волосы всего за 3-4 недели.
+									</li>
+								</ol>
+							</div>
+							
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="boxes__item">
@@ -108,7 +136,32 @@
 						<a href="#" class="boxes__item--desc--but">Заказать</a>
 				</div>
 				<div class="boxes__item--desc--more">
-					<a href="#">Подробнее</a>
+					<a href="#" data-toggle="modal" data-target="#modal--white">Подробнее</a>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="modal--white" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							
+							<div class="modal-body">
+								<h3>OzoneBox №2 "Безупречно чистая кожа"</h3>
+								<p></p>
+								<p></p>
+								<p>Благодаря уникальному составу нашей косметики, в основе 
+								которой находятся озониды ( активные формы кислорода), 
+								комплекс работает на клеточном уровне и действует немедленно 
+								после нанесения!</p>
+								<p>Он волшебным образом воздействует на кожу, обеспечивая 
+								тройной эффект против локальных проблем кожи: </p>
+								<ol>
+									<li>помогает избавиться от прыщей, воспалений,акне и угрей;</li>
+									<li>способствует восстановлению поврежденных участков кожи;</li>
+									<li>разглаживает морщинки и складки.</li>
+								</ol>
+							</div>
+							
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="boxes__item">
@@ -126,7 +179,38 @@
 						<a href="#" class="boxes__item--desc--but">Заказать</a>
 				</div>
 				<div class="boxes__item--desc--more">
-					<a href="#">Подробнее</a>
+					<a href="#" data-toggle="modal" data-target="#modal--red">Подробнее</a>
+				</div>
+				<!-- Modal -->
+				<div class="modal fade" id="modal--red" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							
+							<div class="modal-body">
+								<h3>OzoneBox №3 "Идеальное тело"</h3>
+								<p>Комплекс разработан для лечения целлюлита. В  его 
+									основе лежат Озониды( активные формы кислорода), 
+									которые работают на клеточном уровне, взаимодействуют 
+									с жировыми клетками и разрушают их скопления, 
+									вызывающие формирование целлюлита.</p>
+								<ol>
+									<li>
+										Улучшение микроциркуляции крови
+									</li>
+									<li>
+										Улучшение кислородного обмена, как на поверхности кожи, так и в подкожных тканях
+									</li>
+									<li>
+										Расщепление жиров
+									</li>
+									<li>
+										Усиление лимфодренажа и выделение жидкости из тканей
+									</li>
+								</ol>
+							</div>
+							
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
