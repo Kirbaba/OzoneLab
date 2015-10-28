@@ -125,7 +125,11 @@ add_action('wp_ajax_send_feedback', 'sendFeedback');
 add_action('wp_ajax_nopriv_send_feedback', 'sendFeedback');
 
 function sendFeedback(){
+    $name = $_POST['name'];
+    $mail = $_POST['mail'];
+    $phone = $_POST['phone'];
 
+    mail(get_theme_mod('mail_textbox'), "Письмо с вашего сайта", "С вашего сайта запросили обратную связь:<br> Имя: $name<br> Телефон: $phone<br> Email: $mail", "Content-type: text/html; charset=UTF-8\r\n");
 }
 
 /*======================END FEEDBACK===========================*/
