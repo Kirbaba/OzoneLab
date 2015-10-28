@@ -191,6 +191,19 @@
 		</div>
 	</section>
 
+	<section class="want black">
+		<div class="contain">
+			<h4>Хочу OzoneBox:</h4>
+			<input type="text" class="want--input" placeholder="Имя">
+			<input type="email" class="want--input" placeholder="E-mail">
+			<input type="phone" class="want--input" placeholder="Телефон">
+			<input type="submit" class="want--sub" value="Заказать">
+			<div class="want--description">
+				<p>Оставьте заявку прямо сейчас и получите озонированное масло в подарок!</p>
+			</div>
+		</div>
+	</section>
+
 <body>    
 <?php wp_footer(); ?>
 </body>

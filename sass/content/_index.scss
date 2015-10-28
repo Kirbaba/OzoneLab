@@ -307,3 +307,62 @@
 		
 	}
 }
+
+.want {
+	display: block;
+	float: left;
+	width: 100%;
+	position: relative;
+	padding: 50px 0;
+	color: #FFF;
+	h4 {
+		display: block;
+		float: left;
+		text-align: right;
+		padding-left: 60px;
+		font-weight: bold;
+	}
+	&--input {
+		display: block;
+		float: left;
+		margin: 0 10px;
+		width: 240px;
+		font-size: 16px;
+		padding-left: 5px;
+		height: 44px;
+		color: #000;
+	}
+	&--sub {
+		display: block;
+		float: left;
+		margin: 0 0 0 10px;
+		font-size: 16px;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-align: center;
+		width: 165px;
+		height: 44px;
+		border: 2px solid #ef1b20;
+		background-color: #000;
+		@include transition (.4s);
+		color: #FFF;
+		&:hover {
+			background-color: #fff;
+			color: $mc;
+		}
+	}
+	&--description {
+		display: block;
+		float: left;
+		width: 100%;
+		height: 100px;
+		background-image: url('../img/arrow.png');
+		background-repeat: no-repeat;
+		background-position: 10% 0;
+		padding-left: 210px;
+		padding-top: 25px;
+		p {
+			font-size: 21px;
+		}
+	}
+}
