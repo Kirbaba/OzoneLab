@@ -280,9 +280,9 @@
 	<section class="want black">
 		<div class="contain">
 			<h4>Хочу OzoneBox:</h4>
-			<input type="text" class="want--input" name="name" placeholder="Имя">
-			<input type="email" class="want--input" name="mail" placeholder="E-mail">
-			<input type="phone" class="want--input" name="phone" placeholder="Телефон">
+			<input type="text" class="want--input" name="want-feedback-name" placeholder="Имя">
+			<input type="email" class="want--input" name="want-feedback-mail" placeholder="E-mail">
+			<input type="phone" class="want--input" name="want-feedback-phone" placeholder="Телефон">
 			<input type="submit" class="want--sub" value="Заказать">
 			<div class="want--description">
 				<p>Оставьте заявку прямо сейчас и получите озонированное масло в подарок!</p>
@@ -441,8 +441,8 @@
 				</svg>
 			</div>
 			<div class="header--numb">
-				<h4>+7 (930) 8-1111-99</h4>
-				<p>г.Нижний Новгород, ул.Бориса Панина, д.9</p>
+				<h4><?php echo get_theme_mod('phone_textbox'); ?></h4>
+				<p><?php echo get_theme_mod('address_textbox'); ?></p>
 			</div>
 			<div class="header--callbut">
 				<a href="#nowhere">заказать звонок</a>
@@ -450,7 +450,16 @@
 			<h5>Общество с ограниченной ответственностью "Отри" ОГРН 1065262089551 Юр. Адрес: 603089, г. Нижний Новгород, ул. Бориса Панина, д. 9</h5>
 		</div>
 	</footer>
-
+	<script type="text/javascript">
+		addLoadEvent = function(func){if(typeof jQuery!="undefined")jQuery(document).ready(func);else if(typeof wpOnload!='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};
+		var ajaxurl = '/wp-admin/admin-ajax.php',
+			pagenow = 'toplevel_page_mainpage',
+			typenow = '',
+			adminpage = 'toplevel_page_mainpage',
+			thousandsSeparator = ' ',
+			decimalPoint = ',',
+			isRtl = 0;
+	</script>
 <?php wp_footer(); ?>
 </body>
 </html>

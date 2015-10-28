@@ -61,6 +61,40 @@ $(function(){
        var phone = $('input[name="header-feedback-phone"]').val();
 
        console.log(name+' '+mail+' '+phone);
+
+       jQuery.ajax({
+           url: ajaxurl, //url, к которому обращаемся
+           type: "POST",
+           data: "action=send_feedback&name=" +name+"&mail=" +mail+"&phone=" +phone, //данные, которые передаем. Обязательно для action указываем имя нашего хука
+           success: function(data){
+               $('input[name="header-feedback-name"]').val("");
+               $('input[name="header-feedback-mail"]').val("");
+               $('input[name="header-feedback-phone"]').val("");
+           }
+       });
+       return false;
+   });
+});
+
+$(function(){
+   $(document).on('click','.want--sub', function(){
+       var name = $('input[name="want-feedback-name"]').val();
+       var mail = $('input[name="want-feedback-mail"]').val();
+       var phone = $('input[name="want-feedback-phone"]').val();
+
+       console.log(name+' '+mail+' '+phone);
+
+       jQuery.ajax({
+           url: ajaxurl, //url, к которому обращаемся
+           type: "POST",
+           data: "action=send_feedback&name=" +name+"&mail=" +mail+"&phone=" +phone, //данные, которые передаем. Обязательно для action указываем имя нашего хука
+           success: function(data){
+               $('input[name="want-feedback-name"]').val("");
+               $('input[name="want-feedback-mail"]').val("");
+               $('input[name="want-feedback-phone"]').val("");
+           }
+       });
+       return false;
    });
 });
 
