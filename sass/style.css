@@ -22,11 +22,9 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff;
-  min-width: 1200px;
   font-family: "CenturyGothicRegular"; }
 
 .contain {
-  width: 1170px;
   display: block;
   margin: 0 auto;
   position: relative; }
@@ -590,6 +588,90 @@ ul {
     text-align: center; }
 
   .align-right {
-    text-align: center; } }
+    text-align: center; }
+
+  .boxes__item {
+    width: 90%;
+    margin: 10px auto 10px;
+    float: none; }
+
+  .reviews__item {
+    width: 100%;
+    margin: 15px auto; }
+    .reviews__item h2 {
+      font-size: 20px; }
+    .reviews__item p:before {
+      left: 0; }
+    .reviews__item p:after {
+      right: 0; }
+
+  .want--input {
+    display: block;
+    float: none;
+    margin: 10px auto;
+    width: 90%; }
+
+  .want--sub {
+    float: none;
+    margin: 10px auto; } }
+@media only screen and (max-width: 500px) {
+  .title__form {
+    width: 100%;
+    float: none;
+    margin: 100px auto 25px; }
+
+  .reasons ul li {
+    padding-left: 45px;
+    padding-right: 10px; }
+    .reasons ul li p {
+      font-size: 16px; }
+    .reasons ul li:before {
+      margin-left: -45px; }
+
+  .modal.in .modal-dialog {
+    width: 300px !important; }
+
+  .header--logo {
+    width: 45%; }
+
+  .header--numb {
+    width: 50%; }
+    .header--numb p {
+      font-size: 7px; }
+    .header--numb h4 {
+      font-size: 18px; }
+
+  .header {
+    line-height: normal;
+    height: 150px; }
+
+  .header--callbut {
+    width: 100%; }
+    .header--callbut a {
+      float: none;
+      margin: 15px auto; }
+
+  .want--description {
+    padding-left: 105px; }
+    .want--description p {
+      font-size: 12px; }
+
+  .block_title {
+    font-size: 30px; }
+
+  .modal-backdrop.fade.in {
+    max-width: 100% !important; }
+
+  .modal-open .modal {
+    max-width: 100% !important; } }
+@media (min-width: 768px) {
+  .contain {
+    width: 750px; } }
+@media (min-width: 992px) {
+  .contain {
+    width: 900px; } }
+@media (min-width: 1200px) {
+  .contain {
+    width: 1200px; } }
 
 /*# sourceMappingURL=style.css.map */

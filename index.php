@@ -216,7 +216,7 @@
 		</div>
 	</section>
 
-	<section class="infographics">
+	<!-- <section class="infographics">
 		<h1 class="block_title red">OzoneBox - это...</h1>
 		<div class="contain">
 			<div class="infographics__box">
@@ -234,7 +234,7 @@
 			</div>
 		</div>
 	</section>
-
+ -->
 	<section class="reasons">
 		<h1 class="block_title black">5 причин заказать OzoneBox:</h1>
 		<div class="contain">
@@ -383,7 +383,7 @@
 	волосы, сокращается выпадение, да 
 	еще и активируется рост.Каждая девочка 
 	хвасталась красотой и здоровьем волос, 
-	гладкостью,мягкостью,шелковистостью!
+	гладкостью, мягкостью, шелковистостью!
 	Волосы как после салона! и при этом
 	косметика безопасная и гипоаллергенная! 
 	такое чудо бывает?)Проверено! Бывает. 
