@@ -1,4 +1,17 @@
 @media only screen and (max-width: 1050px) {
+	.header, .footer {
+		display: inline-block;
+		float: none;
+	} 
+	.header--logo svg {
+		display: none;
+	}
+	.header--logo img {
+		display: block;
+		width: 80%;
+		height: auto;
+		margin-left: 10px;		
+	}
 	.boxes__item--desc ul {
 		min-height: 210px;
 	}
