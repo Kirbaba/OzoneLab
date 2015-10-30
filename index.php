@@ -62,7 +62,7 @@
 				<input type="text" class="title__form--input" name="header-feedback-name" placeholder="Имя">
 				<input type="email" class="title__form--input" name="header-feedback-mail"placeholder="E-mail">
 				<input type="phone" class="title__form--input" name="header-feedback-phone" placeholder="Телефон">
-				<input type="submit" class="title__form--sub" value="Заказать">
+				<input type="submit" class="title__form--sub send_feedback" value="Заказать">
 			</div>
 			<div class="title--boxesimg">
 				<img src="<?php bloginfo('template_directory'); ?>/img/boxes.png" alt="">
@@ -486,13 +486,28 @@
 						<input type="text" class="title__form--input" name="header-feedback-name" placeholder="Имя">
 						<input type="email" class="title__form--input" name="header-feedback-mail"placeholder="E-mail">
 						<input type="phone" class="title__form--input" name="header-feedback-phone" placeholder="Телефон">
-						<input type="submit" class="title__form--sub" value="Заказать">
+						<input type="submit" class="title__form--sub send_feedback" value="Заказать">
 					</div>	
 							
 			</div>
 		</div>
 	</div>
 
+	<!-- Modal -->
+	<div class="modal fade" id="order_sent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<div class="title__form--head">
+						<p>Ваша заявка принята. Спасибо зазаказ!</p>
+					</div>
+					<input type="button" class="title__form--sub" value="Закрыть" data-dismiss="modal">
+				</div>
+
+			</div>
+		</div>
+	</div>
 
 	<script type="text/javascript">
 		addLoadEvent = function(func){if(typeof jQuery!="undefined")jQuery(document).ready(func);else if(typeof wpOnload!='function'){wpOnload=func;}else{var oldonload=wpOnload;wpOnload=function(){oldonload();func();}}};

@@ -55,7 +55,7 @@ $(function() {
 });
 
 $(function(){
-   $(document).on('click','.title__form--sub', function(){
+   $(document).on('click','.send_feedback', function(){
        var name = $('input[name="header-feedback-name"]').val();
        var mail = $('input[name="header-feedback-mail"]').val();
        var phone = $('input[name="header-feedback-phone"]').val();
@@ -70,6 +70,8 @@ $(function(){
                $('input[name="header-feedback-name"]').val("");
                $('input[name="header-feedback-mail"]').val("");
                $('input[name="header-feedback-phone"]').val("");
+
+
            }
        });
        return false;
@@ -96,5 +98,32 @@ $(function(){
        });
        return false;
    });
+});
+
+$(function(){
+    $(document).on('click','.modal-body .send_feedback', function(){
+        //alert("WOW");
+        var name = $('input[name="header-feedback-name"]').val();
+        var mail = $('input[name="header-feedback-mail"]').val();
+        var phone = $('input[name="header-feedback-phone"]').val();
+
+        console.log(name+' '+mail+' '+phone);
+
+        jQuery.ajax({
+            url: ajaxurl, //url, к которому обращаемся
+            type: "POST",
+            data: "action=send_feedback&name=" +name+"&mail=" +mail+"&phone=" +phone+"&order=1", //данные, которые передаем. Обязательно для action указываем имя нашего хука
+            success: function(data){
+                $('input[name="header-feedback-name"]').val("");
+                $('input[name="header-feedback-mail"]').val("");
+                $('input[name="header-feedback-phone"]').val("");
+
+                $('#order_call').modal('hide');
+                $('#order_sent').modal('show');
+
+            }
+        });
+        return false;
+    });
 });
 
