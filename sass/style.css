@@ -161,6 +161,7 @@ ul {
     display: block;
     float: right;
     width: 350px;
+    z-index: 9999;
     background-color: rgba(255, 255, 255, 0.3);
     position: relative;
     padding: 0 15px 10px;
@@ -786,6 +787,13 @@ ul {
   .header--callbut {
     width: 33%; } }
 @media only screen and (max-width: 500px) {
+  .title h2 {
+    font-size: 28px; }
+  .title span.black {
+    background-color: rgba(0, 0, 0, 0.7); }
+  .title span.red {
+    background-color: rgba(237, 33, 36, 0.7); }
+
   .title__form {
     width: 100%;
     float: none;

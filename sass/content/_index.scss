@@ -14,8 +14,7 @@
 		text-align: right;
 		color: #FFF;
 		font-weight: bold;
-		font-size: 40px;
-			
+		font-size: 40px;			
 		span {
 			padding: 5px 15px;			
 			display: inline-block;	
@@ -25,6 +24,7 @@
 		display: block;
 		float: right;
 		width: 350px;
+		z-index: 9999;
 		background-color: rgba(255, 255, 255, .3);
 		position: relative;
 		padding: 0 15px 10px;

@@ -175,6 +175,17 @@
 }
 
 @media only screen and (max-width: 500px) {
+	.title {
+		h2 {
+			font-size: 28px;
+		}
+		span.black {
+			background-color: rgba(0, 0, 0, .7);
+		}
+		span.red {
+			background-color: rgba(237, 33, 36, .7);
+		}
+	}
 	.title__form {
 		width: 100%;
 		float: none;
