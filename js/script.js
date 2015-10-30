@@ -71,6 +71,7 @@ $(function(){
                $('input[name="header-feedback-mail"]').val("");
                $('input[name="header-feedback-phone"]').val("");
 
+               $('#order_sent').modal('show');
 
            }
        });
@@ -94,6 +95,8 @@ $(function(){
                $('input[name="want-feedback-name"]').val("");
                $('input[name="want-feedback-mail"]').val("");
                $('input[name="want-feedback-phone"]').val("");
+
+               $('#order_sent').modal('show');
            }
        });
        return false;
@@ -101,11 +104,12 @@ $(function(){
 });
 
 $(function(){
-    $(document).on('click','.modal-body .send_feedback', function(){
+    $(document).on('click','.send_feedback_modal', function(){
+        var block = $(this).parent();
         //alert("WOW");
-        var name = $('input[name="header-feedback-name"]').val();
-        var mail = $('input[name="header-feedback-mail"]').val();
-        var phone = $('input[name="header-feedback-phone"]').val();
+        var name = block.children('input[name="header-feedback-name"]').val();
+        var mail = block.children('input[name="header-feedback-mail"]').val();
+        var phone = block.children('input[name="header-feedback-phone"]').val();
 
         console.log(name+' '+mail+' '+phone);
 
@@ -114,9 +118,9 @@ $(function(){
             type: "POST",
             data: "action=send_feedback&name=" +name+"&mail=" +mail+"&phone=" +phone+"&order=1", //данные, которые передаем. Обязательно для action указываем имя нашего хука
             success: function(data){
-                $('input[name="header-feedback-name"]').val("");
-                $('input[name="header-feedback-mail"]').val("");
-                $('input[name="header-feedback-phone"]').val("");
+                block.children('input[name="header-feedback-name"]').val("");
+                block.children('input[name="header-feedback-mail"]').val("");
+                block.children('input[name="header-feedback-phone"]').val("");
 
                 $('#order_call').modal('hide');
                 $('#order_sent').modal('show');

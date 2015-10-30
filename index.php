@@ -486,7 +486,7 @@
 						<input type="text" class="title__form--input" name="header-feedback-name" placeholder="Имя">
 						<input type="email" class="title__form--input" name="header-feedback-mail"placeholder="E-mail">
 						<input type="phone" class="title__form--input" name="header-feedback-phone" placeholder="Телефон">
-						<input type="submit" class="title__form--sub send_feedback" value="Заказать">
+						<input type="submit" class="title__form--sub send_feedback_modal" value="Заказать">
 					</div>	
 							
 			</div>
