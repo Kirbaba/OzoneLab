@@ -337,36 +337,87 @@ ul {
     float: left;
     position: relative;
     width: 100%;
-    margin: 50px 0;
-    background-image: url("../img/ozone-products-1.png");
-    background-position: 50% 50%;
-    -webkit-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-    background-repeat: no-repeat; }
+    margin: 50px 0; }
   .infographics p {
     font-size: 18px;
     font-weight: 900; }
   .infographics__item-1 {
     display: block;
     position: absolute;
-    top: 215px;
     left: 75px;
     width: 270px; }
   .infographics__item-2 {
     display: block;
     position: absolute;
-    top: 215px;
     right: 175px;
-    width: 270px; }
+    width: 270px;
+    top: 50px; }
+    .infographics__item-2 p {
+      padding-left: 55px; }
   .infographics__item-3 {
     position: absolute;
-    bottom: 95px;
-    left: 150px; }
+    bottom: 25px;
+    left: 75px; }
+    .infographics__item-3 p {
+      padding-left: 75px; }
   .infographics__item-4 {
     position: absolute;
-    bottom: 215px;
-    right: 100px; }
+    bottom: 25px;
+    right: 100px;
+    width: 345px; }
+    .infographics__item-4 p {
+      position: absolute;
+      left: 125px; }
+    .infographics__item-4 img {
+      margin-top: 15px; }
+  .infographics__item-center {
+    width: 400px;
+    height: 400px;
+    background-image: url("../img/center-item.png");
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    background-position: 50% 50%;
+    top: 20%;
+    left: 38%;
+    position: absolute; }
+  .infographics .arrow-left-top {
+    position: absolute;
+    left: -115px;
+    width: 106px;
+    height: 149px;
+    top: 30px; }
+    .infographics .arrow-left-top img {
+      width: 100%;
+      height: auto; }
+  .infographics .arrow-right-top {
+    width: 250px;
+    height: 128px;
+    position: absolute;
+    right: -110px;
+    top: 47px; }
+    .infographics .arrow-right-top img {
+      width: 100%;
+      height: auto; }
+  .infographics .arrow-left-bot {
+    width: 223px;
+    height: 107px;
+    bottom: -182px;
+    left: -130px;
+    position: absolute; }
+    .infographics .arrow-left-bot img {
+      width: 100%;
+      height: auto; }
+  .infographics .arrow-right-bot {
+    position: absolute;
+    width: 134px;
+    height: 183px;
+    bottom: -185px;
+    right: 75px; }
+    .infographics .arrow-right-bot img {
+      width: 100%;
+      height: auto; }
 
 .reasons {
   display: block;
@@ -583,6 +634,65 @@ ul {
     font-size: 16px;
     text-align: center; }
 
+@media only screen and (max-width: 1050px) {
+  .boxes__item--desc ul {
+    min-height: 210px; }
+
+  .boxes__item--desc h4 {
+    min-height: 85px; }
+
+  .infographics__item-1 {
+    left: 0; }
+
+  .infographics__item-2 {
+    right: 45px; }
+
+  .infographics__item-3 {
+    left: 0; }
+
+  .infographics__item-4 {
+    right: 0; }
+
+  .infographics .arrow-left-top {
+    left: -86px;
+    width: 75px; }
+
+  .infographics .arrow-right-top {
+    width: 206px;
+    height: 128px;
+    right: -60px;
+    top: 60px; }
+
+  .infographics .arrow-right-bot {
+    width: 105px;
+    height: 183px;
+    bottom: -176px;
+    right: 165px; }
+
+  .infographics .arrow-left-bot {
+    width: 165px;
+    height: 107px;
+    bottom: -182px;
+    left: -90px; }
+
+  .want h4 {
+    display: block;
+    float: none;
+    text-align: center;
+    padding-left: 0; }
+
+  input.want--input {
+    display: block;
+    float: none;
+    margin: 15px auto; }
+
+  input.want--sub {
+    margin: 10px auto;
+    display: block;
+    float: none; }
+
+  .reviews__item h2 {
+    font-size: 24px; } }
 @media only screen and (max-width: 770px) {
   .align-left {
     text-align: center; }
@@ -613,7 +723,53 @@ ul {
 
   .want--sub {
     float: none;
-    margin: 10px auto; } }
+    margin: 10px auto; }
+
+  .arrow-left-top {
+    display: none; }
+
+  .arrow-right-top {
+    display: none; }
+
+  .arrow-left-bot {
+    display: none; }
+
+  .arrow-right-bot {
+    display: none; }
+
+  .infographics__item-1, .infographics__item-2, .infographics__item-3, .infographics__item-4, .infographics__item-center {
+    display: block;
+    float: left;
+    width: 100%;
+    position: relative;
+    left: inherit;
+    right: inherit;
+    top: inherit;
+    bottom: inherit;
+    margin: 25px auto; }
+    .infographics__item-1 img, .infographics__item-2 img, .infographics__item-3 img, .infographics__item-4 img, .infographics__item-center img {
+      width: 90%;
+      display: block;
+      margin: 15px auto; }
+    .infographics__item-1 p, .infographics__item-2 p, .infographics__item-3 p, .infographics__item-4 p, .infographics__item-center p {
+      padding: 0;
+      text-align: center; }
+  .infographics__item-4 p {
+    position: relative;
+    left: 0; }
+
+  .infographics__box {
+    height: auto; }
+
+  .header--numb {
+    width: 45%; }
+    .header--numb h4 {
+      font-size: 34px; }
+    .header--numb p {
+      font-size: 14px; }
+
+  .header--callbut {
+    width: 33%; } }
 @media only screen and (max-width: 500px) {
   .title__form {
     width: 100%;

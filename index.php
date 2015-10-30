@@ -216,25 +216,43 @@
 		</div>
 	</section>
 
-	<!-- <section class="infographics">
+	<section class="infographics">
 		<h1 class="block_title red">OzoneBox - это...</h1>
 		<div class="contain">
 			<div class="infographics__box">
 				<div class="infographics__item-1">
+					<img src="<?php bloginfo('template_directory'); ?>/img/left-blok.png" alt="">
 					<p>2-3 полноразмерных продукта из нашей линейки 100% натуральной озоновой косметики для красоты волос и молодости кожи в каждом боксе </p>				</div>
 				<div class="infographics__item-2">
+					<img src="<?php bloginfo('template_directory'); ?>/img/right-top-blockk.png" alt="">
 					<p>Роскошная<br>коробочка  </p>
 				</div>
+				<div class="infographics__item-center">
+					<div class="arrow-left-top">
+						<img src="<?php bloginfo('template_directory'); ?>/img/arr-top-l.png" alt="">
+					</div>
+					<div class="arrow-right-top">
+						<img src="<?php bloginfo('template_directory'); ?>/img/arr-top-r.png" alt="">
+					</div>
+					<div class="arrow-left-bot">
+						<img src="<?php bloginfo('template_directory'); ?>/img/arr-bot-l.png" alt="">
+					</div>
+					<div class="arrow-right-bot">
+						<img src="<?php bloginfo('template_directory'); ?>/img/arr-bot-r.png" alt="">
+					</div>
+				</div>
 				<div class="infographics__item-3">
+					<img src="<?php bloginfo('template_directory'); ?>/img/left-bot-block.png" alt="">
 					<p>Доставка по<br>всему миру </p>
 				</div>
-				<div class="infographics__item-4">					
+				<div class="infographics__item-4">
 					<p>Приятные сюрпризы <br>от команды OzoneLab </p>
-				</div>
+					<img src="<?php bloginfo('template_directory'); ?>/img/right-bot-block.png" alt="">				
+				</div>				
 			</div>
 		</div>
 	</section>
- -->
+
 	<section class="reasons">
 		<h1 class="block_title black">5 причин заказать OzoneBox:</h1>
 		<div class="contain">

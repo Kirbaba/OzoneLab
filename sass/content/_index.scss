@@ -224,12 +224,12 @@
 		position: relative;
 		width: 100%;
 		margin: 50px 0;
-		background-image: url('../img/ozone-products-1.png');
-		background-position: 50% 50%;
-		-webkit-background-size: contain;
-		     -o-background-size: contain;
-		        background-size: contain;
-		background-repeat: no-repeat;
+		//background-image: url('../img/ozone-products-1.png');
+		// background-position: 50% 50%;
+		// -webkit-background-size: contain;
+		//      -o-background-size: contain;
+		//         background-size: contain;
+		// background-repeat: no-repeat;
 	}
 	p {
 		font-size: 18px;
@@ -237,27 +237,98 @@
 	}
 	&__item-1 {
 		display: block;
-		position: absolute;
-		top: 215px;
+		position: absolute;		
 		left: 75px;
 		width: 270px;
 	}
 	&__item-2 {
 		display: block;
 		position: absolute;
-		top: 215px;
 		right: 175px;
 		width: 270px;
+		top: 50px;
+		p {
+			padding-left: 55px;
+		}
 	}
 	&__item-3 {
 		position: absolute;
-		bottom: 95px;
-		left: 150px;
+		bottom: 25px;
+		left: 75px;
+		p {
+			padding-left: 75px;
+		}
 	}
 	&__item-4 {
 		position: absolute;
-		bottom: 215px;
+		bottom: 25px;
 		right: 100px;
+		width: 345px;
+		p {
+			position: absolute;
+			left: 125px;
+		}
+		img {
+			margin-top: 15px;
+		}
+	}
+	&__item-center {
+		width: 400px;
+		height: 400px;
+		background-image: url("../img/center-item.png");
+		background-repeat: no-repeat;
+		-webkit-background-size: contain;
+		-o-background-size: contain;
+		background-size: contain;
+		background-position: 50% 50%;
+		top: 20%;
+		left: 38%;
+		position: absolute;
+		
+	}
+	.arrow-left-top {
+		position: absolute;
+		left: -115px;
+		width: 106px;
+		height: 149px;
+		top: 30px;
+		img {
+			width: 100%;
+			height: auto;
+		}
+    }
+    .arrow-right-top {
+		width: 250px;
+		height: 128px;
+		position: absolute;
+		right: -110px;
+		top: 47px;
+		img {
+			width: 100%;
+			height: auto;
+		}
+    }
+    .arrow-left-bot {
+		width: 223px;
+		height: 107px;
+		bottom: -182px;
+		left: -130px;
+		position: absolute;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	.arrow-right-bot {	
+		position: absolute;
+		width: 134px;
+		height: 183px;
+		bottom: -185px;
+		right: 75px;
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
 }
 
